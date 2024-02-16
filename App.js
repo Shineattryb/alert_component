@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
    
-      {/* <DocAlertPopup/> */}
+       <DocAlertPopup/> 
 {/* <DocMainHeader header={header} /> */}
-<Box/>
+// <Box/>
     </div>
   );
 }
