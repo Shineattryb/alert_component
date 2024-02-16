@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.AlertPopup{
+    width:400px;
+    
+ background-image:url('../assets/svglink1.svg');
+ background-repeat: no-repeat;
+    border-radius:12px;
+}
+
+ .AlertPopupHeader{
+      width:352px;
+ padding:0;
+   
+    font-weight: 600;
+    font-size:18px;
+    line-height: 28px;
+    color:#101828;
+    font-family:'Inter';
+
+}
+
+
+ .AlertPopupBody{
+    padding:0;
+    font-weight: 400;
+    font-size:14px;
+    line-height: 20px;
+    color:#475467;
+  font-family:'Inter';
+    
+}
+.section{
+    padding-left:22px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+.upper-part{
+    width:400px;
+   
+
+}
+ .phone_container{
+   
+    
+    width:400px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+
+  
+ } 
+
+.AlertPopupFooter button{
+   width:170px;
+   height:44px;
+   
+ 
+
+   
+}
+
+.AlertPopupFooter{
+    width:400px;
+ 
+   
+justify-content:center;
+padding-top:24px;
+padding-bottom:24px;
+}
+#cancel-btn{
+    font-weight:600;
+font-size:16px;
+line-height: 24px;
+    color: #344054;
+    border:1px solid #D0D5DD;
+    box-shadow:0px 1px 2px 0px #1018280D;
+    border-radius:8px;
+}
+#okay-btn{
+    box-shadow:0px 1px 2px 0px #1018280D;
+    font-weight:600;
+    font-size:16px;
+    line-height: 24px;
+}
