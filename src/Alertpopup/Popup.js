@@ -1,4 +1,5 @@
-import React,{useState} from "react"
+import React,{useState} from "react";
+import axios from "axios";
 import {
     AlertPopup,
     AlertPopupHeader,
@@ -25,8 +26,17 @@ const DocAlertPopup = () => {
 
 
     function modalOkayHandler() {
+
+
+        
+
+
+
+
         console.log("Accepted");
-        exitModal();
+
+       
+        // exitModal();
     }
     
     function modalCancelHandler() {
@@ -49,31 +59,52 @@ const DocAlertPopup = () => {
                         name="example-popup-1"
                         visibility={modalState}
                         onBackdropClick={modalCancelHandler}  className="container">
-<div className="upper-part">
+         
 
-                        <Alertheader exitModal={exitModal}  Headericon={svglink2} Crossicon={svglink3}/>
+                      
+          
 
-
-                        <div className="section">
+           
                            
-                        <AlertPopupHeader >Send Test Message</AlertPopupHeader>
-                        <AlertPopupBody >We'll send a Test Message on this number</AlertPopupBody>
-                        </div>   
-                     
-                        </div>
-                        
-                        <div className="phone_container">
+                        <AlertPopupHeader >
+                            <div >
+                        <Alertheader exitModal={exitModal}  Headericon={svglink2} Crossicon={svglink3}/>
+                          </div>
+                          <div className="Headersection">
+                          <div className="alert-Heading-text">
+                                     Send Test Message
+                                 </div>
+                         
+                                 <div className="alert-sub-heading">
+                                     We'll send a Test Message on this number
+                                </div>
+                                </div>
+                        </AlertPopupHeader>
 
-                        <Phone_input/>
-                       </div>
+
+                        <AlertPopupBody >
+                           <div className="section">
+                               
+                                
+                                <Phone_input/>
+                             </div>        
+                        </AlertPopupBody>
+                      
+           
+                     
+                       
+                        
+                        
 
                         <AlertPopupFooter>
+                            <div className="footer">
                             <Button  id="cancel-btn"onClick={modalCancelHandler} variant="link">
                                 Cancel
                             </Button>
                             <Button  id="okay-btn"onClick={modalOkayHandler}>Send Message</Button>
+                            </div>
                         </AlertPopupFooter>
-                    </AlertPopup>
+                </AlertPopup>
                     
                 </div>
             </div>
@@ -81,4 +112,10 @@ const DocAlertPopup = () => {
     )
 }
 
-export default DocAlertPopup
+
+
+// </AlertPopup>
+
+export default DocAlertPopup;
+
+  

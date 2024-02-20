@@ -2,57 +2,51 @@
 .AlertPopup{
     width:400px;
     
- background-image:url('../assets/svglink1.svg');
- background-repeat: no-repeat;
+ background-image:url('../assets/svglink1.svg')!important;
+
+ background-repeat: no-repeat !important;
     border-radius:12px;
 }
 
- .AlertPopupHeader{
-      width:352px;
- padding:0;
+
+
+.alert-Heading-text{
    
-    font-weight: 600;
-    font-size:18px;
-    line-height: 28px;
-    color:#101828;
-    font-family:'Inter';
+padding:0;
+ 
+  font-weight: 600;
+  font-size:18px;
+  line-height: 28px;
+  color:#101828;
+  font-family:'Inter';
 
 }
-
-
- .AlertPopupBody{
+.alert-sub-heading{
     padding:0;
     font-weight: 400;
     font-size:14px;
     line-height: 20px;
     color:#475467;
   font-family:'Inter';
-    
 }
+
 .section{
-    padding-left:22px;
+
     display:flex;
     flex-direction:column;
     gap:8px;
+    padding-top:calc(12px - 1.33rem);
 }
-.upper-part{
-    width:400px;
-   
-
-}
- .phone_container{
-   
-    
-    width:400px;
+.Headersection{
     display:flex;
     flex-direction:column;
-    align-items: center;
-    
+    gap:8px;
+    margin-top:10px;
+}
 
-  
- } 
 
-.AlertPopupFooter button{
+
+.footer button{
    width:170px;
    height:44px;
    
@@ -60,15 +54,16 @@
 
    
 }
+.footer{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    gap:12px;
+    padding:calc(24px - 1.33rem) 0;
 
-.AlertPopupFooter{
-    width:400px;
- 
-   
-justify-content:center;
-padding-top:24px;
-padding-bottom:24px;
+
 }
+
 #cancel-btn{
     font-weight:600;
 font-size:16px;
