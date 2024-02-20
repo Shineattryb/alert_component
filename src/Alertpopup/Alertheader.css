@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.header{
+    display:flex;
+    flex-direction:row;
+
+width:400px;
+}
+.icons{
+    display:flex;
+    flex-direction:row;
+ align-items:flex-start;
+ justify-content:space-between;
+ width:100%;
+ margin-top:5px;
+ 
+}
+ #call{
+   
+ 
+    
+    padding:5px;
+    padding-left:0px;
+    padding-top:0px;
+    margin-left:5px;
+}
+#cross{
+   
+    margin-right:30px;
+  padding:0px 5px 0 0 ;
+ 
+    cursor:pointer;
+} 
